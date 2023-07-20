@@ -12,11 +12,11 @@ spec:
         app: config-server-app
     spec:
       containers:
-        - name: config-server-app
-          image: dmanias/configserver
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 9296
+      - name: config-server-app
+        image: dmanias/configserver
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 9296
 ---
 
 apiVersion: v1
@@ -27,5 +27,5 @@ spec:
   selector:
     app: config-server-app
   ports:
-    - port: 80
-      targetPort: 9296
+  - port: 80
+    targetPort: 9296
