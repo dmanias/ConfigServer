@@ -55,7 +55,8 @@
 						<image>openjdk:11</image>
 					</from>
 					<to>
-						<image>registry.hub.docker.com/dmanias/configserver</image>
+						<!--suppress UnresolvedMavenProperty -->
+						<image>${REPO_URL}/configserver</image>
 						<tags>${project.version}</tags>
 					</to>
 				</configuration>
