@@ -52,7 +52,7 @@
 				<artifactId>jib-maven-plugin</artifactId>
 				<configuration>
 					<from>
-						<image>openjdk:11</image>
+						<image>dmanias/java-base</image>
 					</from>
 					<to>
 						<!--suppress UnresolvedMavenProperty -->
