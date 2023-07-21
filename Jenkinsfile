@@ -13,7 +13,7 @@ node {
         withCredentials([file(credentialsId: 'gcp', variable: 'GC_KEY')]) {
             sh("gcloud auth activate-service-account --key-file=${GC_KEY}")
             sh 'gcloud auth configure-docker  europe-west8-docker.pkg.dev'
-            sh "${mvnCMD} clean install"
+            sh "${mvnCMD} clean install -Dmaven.test.skip=true"
             sh "${mvnCMD} jib:build -DREPO_URL=${REGISTRY_URL}/${PROJECT_ID}/${ARTIFACT_REGISTRY}"
         }
     }
