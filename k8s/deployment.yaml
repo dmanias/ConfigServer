@@ -15,6 +15,9 @@ spec:
       - name: config-server-app
         image: IMAGE_URL/configserver
         imagePullPolicy: Always
+        # Just spin & wait forever
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
         ports:
         - containerPort: 9296
 ---
