@@ -55,7 +55,6 @@
 						<image>dmanias/java-base</image>
 					</from>
 					<to>
-						<!--suppress UnresolvedMavenProperty -->
 						<image>registry.hub.docker.com/dmanias/configserver</image>
 						<tags>${project.version}</tags>
 					</to>
