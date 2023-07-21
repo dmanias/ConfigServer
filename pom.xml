@@ -56,7 +56,7 @@
 					</from>
 					<to>
 						<!--suppress UnresolvedMavenProperty -->
-						<image>${REPO_URL}/configserver</image>
+						<image>registry.hub.docker.com/dmanias/configserver</image>
 						<tags>${project.version}</tags>
 					</to>
 				</configuration>
