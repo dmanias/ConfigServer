@@ -8,5 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/dmanias/microdemo-spring-configuration
+          uri: http://github.com/dmanias/microdemo-spring-configuration
           clone-on-start: true
