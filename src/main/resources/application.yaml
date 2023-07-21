@@ -4,9 +4,16 @@ server:
 spring:
   application:
     name: CONFIG-SERVER
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/dmanias/microdemo-spring-configuration
-          clone-on-start: true
+
+  oauth2:
+    issuer: https://trial-5066932.okta.com/oauth2/default
+    audience: api://default
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
