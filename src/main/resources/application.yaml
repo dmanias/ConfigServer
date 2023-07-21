@@ -4,7 +4,29 @@ server:
 spring:
   application:
     name: CONFIG-SERVER
+  zipkin:
+    baseUrl: http://zipkin-svc:9411
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          okta:
+#            client-id: ${OKTA_OAUTH2_CLIENT_ID}
+#            client-secret: ${OKTA_OAUTH2_CLIENT_SECRET}
+#        provider:
+#          okta:
+#            issuer-uri: ${OKTA_OAUTH2_ISSUER}
+
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+
+okta:
   oauth2:
     issuer: https://trial-5066932.okta.com/oauth2/default
     audience: api://default
-
